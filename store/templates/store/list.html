@@ -4,7 +4,7 @@
         <a href="{% url 'store:detail' album_id=album.id %}">
           <img style="height: 100px; width: 100%" class="img-responsive" src="{{ album.picture }}" alt="{{ album.title }}">
         </a>
-        <h3><a href="/">{{ album.title }}</a></h3>
+        <h3><a href="{% url 'store:detail' album_id=album.id %}">{{ album.title }}</a></h3>
         {% for artist in album.artists.all %}
             <p>{{ artist.name }}</p>
         {% endfor %}
