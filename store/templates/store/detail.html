@@ -1,0 +1,13 @@
+{% extends 'store/base.html' %}
+
+{% block content %}
+
+<div class="card">
+    <img style="height: 100px;" class="card-img-top" src="{{thumbnail}}" alt="{{album_title}}">
+    <div class="card-body">
+        <h4 class="card-title">{{album_title}}</h4>
+        <p class="card-text">{{artists_name}}</p>
+    </div>
+</div>
+
+{% endblock %}
